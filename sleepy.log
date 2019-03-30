@@ -1,0 +1,22 @@
+INFO:daemons.daemonize.simple:Succesfully daemonized process 11461.
+INFO:daemons.startstop.simple:Beginning run loop for process.
+INFO:daemons.startstop.simple:Succesfully stopped the process.
+INFO:daemons.daemonize.simple:Succesfully daemonized process 11531.
+INFO:daemons.startstop.simple:Beginning run loop for process.
+INFO:daemons.daemonize.simple:Succesfully daemonized process 11864.
+INFO:daemons.startstop.simple:Beginning run loop for process.
+ERROR:daemons.startstop.simple:Uncaught exception in the daemon run() method.
+Traceback (most recent call last):
+  File "/home/trungbanh/.local/lib/python3.6/site-packages/daemons/startstop/simple.py", line 43, in start
+    self.run()
+  File "/home/trungbanh/.local/lib/python3.6/site-packages/daemons/interfaces/startstop.py", line 53, in run
+    self.step()
+  File "/home/trungbanh/Code/Python/daemon_test/main_ras.py", line 10, in step
+    cs = Control_Sensor.getInstance()
+  File "/home/trungbanh/Code/Python/daemon_test/main_ras.py", line 21, in getInstance
+    print('it is instan')
+OSError: [Errno 5] Input/output error
+INFO:daemons.daemonize.simple:Succesfully daemonized process 11938.
+INFO:daemons.startstop.simple:Beginning run loop for process.
+ERROR:daemons.startstop.simple:The process is already running with pid 11938.
+INFO:daemons.startstop.simple:Succesfully stopped the process.
